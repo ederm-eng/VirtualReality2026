@@ -4,11 +4,37 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-box position="-10 0.5 -10" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="-10 1.25 -10" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="-10 .75 -10" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      
+      <!--- Car Wheels -->
+        <a-torus position="0 .66 -3" radius=".55" radius-tubular="0.1" color="black"> </a-torus>
+        <a-torus position="4 .66 -5" radius=".55" radius-tubular="0.1" color="black"> </a-torus>
+        <a-torus position="4 .66 -3" radius=".55" radius-tubular="0.1" color="black"> </a-torus>
+        <a-torus position="0 .66 -5" radius=".55" radius-tubular="0.1" color="black"> </a-torus>
+        <a-cylinder position ="0 .66 -3" radius = ".4" color="grey" rotation = "90 0 0" height =".5"></a-cylinder>
+        <a-cylinder position ="4 .66 -5" radius = ".4" color="grey" rotation = "90 0 0" height =".5"></a-cylinder>
+        <a-cylinder position ="4 .66 -3" radius = ".4" color="grey" rotation = "90 0 0" height =".5"></a-cylinder>
+        <a-cylinder position ="0 .66 -5" radius = ".4" color="grey" rotation = "90 0 0" height =".5" ></a-cylinder>
+
+      <!--- Car Body -->
+        <a-box position= ".75 1.1 -4" height=".9" depth = "1.8" width = "2.5" color="black" > </a-box>
+        <a-box position= "2 1.3 -4" height="1.8" depth = "1.8" width = "2.8" color="black" > </a-box>
+        <a-box position= "3.2 1.1 -4" height=".9" depth = "1.8" width = "3" color="black" > </a-box>
+      <!-- Car Lights -->
+        <a-cylinder position = "4.7 1 -3.3" rotation = "0 0 90" height = "0.2" radius = ".1"  color = "yellow"> </a-cylinder>
+        <a-cylinder position = "4.7 1 -4.7" rotation = "0 0 90" height = "0.2" radius = ".1"  color = "yellow"> </a-cylinder>
+      <!-- Car windows-->
+        <a-square position = "5 2 5" height = ".5" width = ".5" color="grey" ></a-square>
+        <a-square position = "5 2 5" height = ".5" width = ".5" color="grey" ></a-square>
+        <a-square position = "5 2 5" height = ".5" width = ".5" color="grey" ></a-square>
+        <a-square position = "5 2 5" height = ".5" width = ".5" color="grey" ></a-square>
+        <a-square position = "5 2 5" height = ".5" width = ".5" color="grey" ></a-square>
+        <a-square position = "5 2 5" height = ".5" width = ".5" color="grey" ></a-square>
+    
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" src = "road_intersection.jpg" repeat = "2 4"></a-plane>
+      <a-sky src = "pico_bg.jpg" repeat = "4 3"></a-sky>
       <a-camera position="0 1.4 5"></a-camera>
     </a-scene>
   </body>
